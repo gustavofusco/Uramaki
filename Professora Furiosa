@@ -1,0 +1,45 @@
+var alunosDaSegunda = [10, -5, 3, 0]; //true
+var alunosDaTerca = [2, 0, -3];
+//true
+var alunosDaQuarta =[5, 5];
+//false
+var alunosDaQuinta = [0, 0, 0, -1];
+//true
+var alunosDaSexta = [18, 10, 20, 1];
+//false
+
+function acontece(diaDaSemana, nmrNec){
+let quantidade =0;
+for(let i=0; i <diaDaSemana.lenght; i++){
+    if(diaDaSemana[i] < 0){
+        quantidade++;
+    }
+}
+if(nmrNec >= quantidade){//alunos tem que ser maior que 2
+    return true;
+}else{
+    return false;
+}
+}
+
+function resposta(){
+    if(acontece == true){
+        return 'Hoje terá Aula!!! Peguem seus Cadernos.';
+    }else{
+        return 'Hoje não havera aula :( ';
+    }
+}
+console.log(acontece(alunosDaSegunda, 2) + resposta);
+
+function aberturas(diasDaSemana, nmrAlunos1){
+    let diasQt = [];
+    let nmrAlunos2
+    for(let i =0; i < diasDaSemana.lenght; i++){ 
+        if(diasDaSemana[i] == alunosDaSegunda, alunosDaTerca, alunosDaQuarta, alunosDaQuinta, alunosDaSexta){
+            diasQt.push(diasDaSemana[i]);
+        }
+    if(nmrAlunos1 ) 
+    }
+//final retornar os valores true e false dentro de um array
+
+}
